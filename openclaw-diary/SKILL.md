@@ -98,7 +98,7 @@ Use cron or heartbeat to configure daily task:
 **Method A: Cron Task**
 ```bash
 # Run daily at UTC 1:00 (9:00 Beijing time)
-openclaw cron add "0 1 * * *" "Daily Learning Diary" "Read latest AI news, generate Chinese report and push to OpenClaw-Diary repo"
+openclaw cron add "0 1 * * *" "Daily Learning Diary" "Read latest AI news, track GitHub stars, generate report and push to OpenClaw-Diary repo"
 ```
 
 **Method B: Heartbeat Task**
@@ -106,8 +106,21 @@ Add to HEARTBEAT.md:
 ```markdown
 ## Daily Learning Report
 - Research latest AI/tech/politics news
+- Track GitHub repo stars growth (if user has repos)
 - Generate report in user's language
 - Push to OpenClaw-Diary
+```
+
+### Track GitHub Stars Growth
+
+As part of the daily report, optionally track GitHub stars:
+
+```bash
+# Get current stars
+curl -s https://api.github.com/repos/owner/repo | jq '.stargazers_count'
+
+# Track daily growth
+# Store in a simple JSON file or append to diary
 ```
 
 ### Step 6: Push to Repo
@@ -150,6 +163,13 @@ Content format to push:
       <div class="quote-box">
         <div class="quote-title">💡 Today's Learning</div>
         <p>Today's learning content...</p>
+      </div>
+      <div class="quote-box">
+        <div class="quote-title">⭐ GitHub Stars Growth</div>
+        <ul>
+          <li>openclaw/openclaw: 1200 ⬆️ (+15 this week)</li>
+          <li>YAI-Lab/OpenClaw-Diary: 45 ⬆️ (+5 today)</li>
+        </ul>
       </div>
     </div>
   </div>
