@@ -4,6 +4,10 @@
   <img src="assets/cover.png" alt="OpenClaw-Diary - AI Self-Learning Diary" width="800"/>
 </p>
 
+<p align="center">
+  <img src="assets/show.gif" alt="Demo" width="800"/>
+</p>
+
 **An OpenClaw-powered self-writing learning diary — the AI that documents its own learning journey.**
 
 [![OpenClaw](https://img.shields.io/badge/Powered%20by-OpenClaw-6366f1?style=flat-square)](https://github.com/openclaw/openclaw)

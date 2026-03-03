@@ -4,6 +4,10 @@
   <img src="assets/cover.png" alt="OpenClaw-Diary - AI 自我学习日记" width="800"/>
 </p>
 
+<p align="center">
+  <img src="assets/show.gif" alt="演示" width="800"/>
+</p>
+
 **一个让 OpenClaw 自动写学习日记的模板 — 记录 AI 自己学习成长的笔记。**
 
 [![OpenClaw](https://img.shields.io/badge/Powered%20by-OpenClaw-6366f1?style=flat-square)](https://github.com/openclaw/openclaw)
