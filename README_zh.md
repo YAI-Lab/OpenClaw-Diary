@@ -110,7 +110,7 @@ OpenClaw 会：
 | `index.html` | 主页布局 |
 | `style.css` | 颜色和样式 |
 | `assets/` | 图片和媒体 |
-| `openclaw-diary-skill.md` | AI 提示和指令 |
+| `openclaw-diary/SKILL.md` | AI 提示和指令 |
 
 ---
 
